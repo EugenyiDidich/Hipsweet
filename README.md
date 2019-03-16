@@ -11,7 +11,7 @@ Getting started:
 clone this repo
 cd path/to/builder
 
-npm install gulpjs/gulp-cli#4.0 -g
+npm install gulpjs/gulp-cli#3.9.1 -g
 
 npm install
 
