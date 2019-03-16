@@ -1,0 +1,263 @@
+@import '../misc/mixins.scss';
+@import '../misc/fonts.scss';
+
+.team {
+	background: radial-gradient(#fff, #ddd);
+	padding-top: 100px; 
+	padding-bottom: 100px;
+}
+
+.team a {
+	display: block;
+	text-decoration: none;
+}
+
+.team__header {
+	font-size: 0;
+	margin-bottom: 50px;
+}
+
+.team h2 {
+	padding-top: 0; 
+}
+
+.team__header-left {
+	width: 30%;
+}
+
+.team__header-right {
+	width: 70%;
+}
+
+.team__header-left, .team__header-right {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.team__nav {
+	font-size: 0;
+	padding-left: 50px;
+}
+
+.team__nav-item {
+	width: 30%;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	transition: all .3s;
+	margin-right: 10px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 20px;
+}
+
+.team__nav-item:last-child {
+	margin-right: 0;
+}
+
+.team__nav_active {
+	&:after {
+		display: block;
+		content: "";
+		position: absolute;
+		border: 13px solid transparent;
+		border-left-width: 20px;
+		border-right-width: 20px;
+		border-top-color: #893213;
+		top: 100%;
+		left: 50%;
+		transform: translatex(-50%);
+	}
+}
+
+.team .team__nav-item:hover, .team .team__nav_active {
+	background-color: #893213;
+  	
+	.link__name {
+		color: #FFA92B; 
+	}
+
+	.link__desc {
+		color: #fff;
+	} 
+}
+
+.team__nav-link {
+	display: block;
+	transition: .3s;
+}
+
+.team .link__name {
+	font-size: 30px;
+	@include Malina;
+	margin-bottom: 10px;
+	color: #2B2F60; 
+}
+
+.team .link__desc {
+	font-size: 16px;
+	color: #8D8D8D; 
+}
+
+.team__list .team__item {
+	font-size: 0;
+}
+
+.team__item .about__left {
+	width: 25%;
+}
+
+.about__left-bottom {
+	font-weight: bold;
+}
+
+.team__item .about__center {
+	width: 45%;
+}
+.team__cook {
+	display: block;
+	width: 480px;
+	
+	img {
+		margin: auto;
+		display: block;
+		max-width: 100%;
+		max-height: 600px;
+	}
+}
+
+.team__item .about__right {
+	width: 30%;
+}
+
+.team__item .about__left, .team__item .about__center,
+.team__item .about__right {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.team__item {
+	display: none;
+	
+	&.active {
+		display: block;
+	}
+}
+
+.team__item  p {
+	font-size: 14px;
+	color: #747474;
+	line-height: 21px;
+	font-style: italic;
+	margin-bottom: 20px;  
+}
+
+.order {
+	margin: 0 auto;
+	height: 400px;
+	width: 840px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	background: url('../assets/img/order-bg.jpg');
+	-webkit-background-size: cover; 
+	 -o-background-size: cover; 
+	 background-size: cover; 
+	position: relative; 
+}
+
+.order__left {
+	width: 51%;
+	font-size: 64px;
+	color: #FFF;
+	@include Malina;
+	position: absolute;
+	left: 10%;
+	top: 25%; 
+}
+
+.order__right {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	color: #fff;
+	padding: 60px 85px 60px 45px;
+	background-color: rgba(29, 29, 32, 0.8); 
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;   
+}
+
+.order__list {
+	margin-bottom: 40px;
+}
+
+.order__item {
+	border-bottom: 1px solid #fff;
+	margin-bottom: 25px;
+}
+
+.order__item input {
+	outline: 0;
+	color: #fff;
+	background: transparent;
+	padding: 15px 0; 
+	border: none;
+	width: 100%;
+}
+
+label input {
+	outline: 0;
+}
+
+.order__submit {
+	display: block;
+	position: absolute;
+	right: -35px;
+	bottom: -35px;
+	width: 96px;
+	height: 96px;
+	background: #FFB100;
+	-webkit-border-radius: 50%;
+	 border-radius: 50%; 
+	border: none;
+	cursor: pointer;
+	transition: .3s;
+	 
+	 &:hover {
+	 	background-color: #9d5125; 
+	 	
+	 	&:before {
+	 		background-color: #FFB100; 
+	 	}
+
+	 	&:after {
+	 		border-left: 27px solid #FFB100; 
+	 	}
+	 }
+}
+
+.order__submit:before {
+	width: 20px;
+	height: 30px;
+	background-color: #9d5125;
+	left: 31px;
+    bottom: 32px;
+    transition: .3s;
+}
+
+.order__submit:after {
+	border-top: 25px solid transparent;
+    border-left: 27px solid #9d5125;
+    border-bottom: 25px solid transparent;
+    right: 19px;
+    bottom: 22px;
+    transition: .3s;
+}
+
+.order__submit:after, .order__submit:before {
+	display: block;
+	content: "";
+	position: absolute;
+}

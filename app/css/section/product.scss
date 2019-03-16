@@ -1,0 +1,70 @@
+@import '../misc/mixins.scss';
+@import '../misc/fonts.scss';
+
+.product {
+	background: linear-gradient(to right, rgba(255, 179, 16, 0.8) 0, rgba(254, 185, 1, 0.8) 100%), url('../assets/img/pattern.png');
+	padding-top: 100px; 
+	padding-bottom: 65px; 
+}
+
+.product .title {
+	text-align: center;
+	color: #393939; 
+	padding-top: 0;
+}
+
+.product__desc {
+	padding: 0 120px;
+	color: #883213;
+	margin-bottom: 70px;
+}
+
+.product__list {
+	text-align: justify;
+	font-size: 0;
+}
+
+.product__item {
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+.product__img {
+	margin: auto;
+	margin-bottom: 20px;
+	display: block;
+	width: 178px;
+	height: 178px;
+	display: block;
+	position: relative;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.05);  
+}
+
+.product__img-pic {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 120%;
+}
+
+.product__title {
+	text-align: center;
+}
+
+.product__title-name {
+	color: #393939;
+	font-size: 32px;
+	@include Malina;
+}
+
+.product__title-desc p{
+	color: #883213;
+	padding: 5px; 
+	font-size: 14px;
+}

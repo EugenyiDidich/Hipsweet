@@ -1,0 +1,117 @@
+@import '../misc/mixins.scss';
+@import '../misc/fonts.scss';
+
+.footer {
+	font-size: 0;
+	padding-top: 22px;
+}
+
+.copyright, .socials, .logo__name, .copyright__left, .copyright__right, .socials__item {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.footer__logo {
+	display: inline-block;
+	width: 25%;
+	font-size: 0;
+}
+
+.logo {
+	display: block;
+}
+
+.footer .logo__img {
+	width: 66px;
+	height: 55px;
+}
+
+.footer .logo__name {
+	font-size: 29px;
+}
+
+.copyright {
+	width: 52%;
+	font-size: 0;
+}
+
+.copyright__left, .copyright__right {
+	font-size: 14px;
+	color: #8d8d8d;
+	font-weight: normal;
+}
+
+.copyright__left {
+	margin-right: 30px;
+}
+
+.socials {
+	width: 23%;
+	font-size: 0;
+}
+
+.socials__item {
+	margin-right: 10px;
+}
+
+.socials__item:last-child {
+	margin-right: 0;
+}
+
+.socials__link {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: #fff; 
+	transition: .3s;
+}
+
+.socials__link-fs {
+	background: url('../assets/img/icons/fs.png') no-repeat; 
+	background-position: 50%;
+
+	&:hover {
+		background: url('../assets/img/icons/fs-h.png') no-repeat;
+		background-position: 50%;
+	}
+}
+
+.socials__link-vk {
+	background: url('../assets/img/icons/vk.png') no-repeat; 
+	background-position: 50%;
+
+	&:hover {
+		background: url('../assets/img/icons/vk-h.png') no-repeat;
+		background-position: 50%;
+	}
+}
+
+.socials__link-inst {
+	background: url('../assets/img/icons/inst.png') no-repeat; 
+	background-position: 50%;
+
+	&:hover {
+		background: url('../assets/img/icons/inst-h.png') no-repeat;
+		background-position: 50%;
+	}
+}
+
+.socials__link-tw {
+	background: url('../assets/img/icons/tw.png') no-repeat; 
+	background-position: 50%;
+
+	&:hover {
+		background: url('../assets/img/icons/tw-h.png') no-repeat;
+		background-position: 50%;
+	}
+}
+
+.socials__link-ok {
+	background: url('../assets/img/icons/ok.png') no-repeat; 
+	background-position: 50%;
+
+	&:hover {
+		background: url('../assets/img/icons/ok-h.png') no-repeat;
+		background-position: 50%;
+	}
+}

@@ -1,0 +1,93 @@
+@import '../misc/mixins.scss';
+@import '../misc/fonts.scss';
+
+//--<section> padding
+.retreat {
+	padding-top: 120px;
+}
+
+.taste {
+	background: linear-gradient(to right, #cac9c9 0, #e8e7e7 100%); 
+}
+
+.taste__left {
+	width: 60%;
+	vertical-align: top;
+	padding-left: 60px;
+}
+
+.taste__right {
+	width: 39%;
+	vertical-align: bottom;
+}
+
+.taste__left, .taste__right {
+	display: inline-block;
+}
+
+.taste__about {
+	width: 410px;
+	margin-bottom: 60px;
+	margin-top: 100px;
+}
+
+.title__blue {
+	color: #2B2F5F; 
+}
+
+.taste__about-desc p {
+	font-size: 16px;
+	color: #747474;
+	line-height: 22px; 
+}
+
+.taste__list {
+	text-align: justify;
+	font-size: 0;
+}
+
+.taste__item {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+.taste__img {
+	margin: auto;
+	margin-bottom: 30px;
+	display: block;
+	width: 100px;
+	height: 100px;
+	display: block;
+	position: relative;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	background-color: #C7C7CD;  
+}
+
+.taste__img-pic {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.taste__img-title {
+	@include Malina;
+	color: #747474;
+	text-align: center; 
+}
+
+.taste__cook {
+	display: block;
+	width: 440px;
+	margin-top: 50px;
+	
+	img {
+		display: block;
+		max-width: 100%;
+		min-height: 100%;
+	}
+}

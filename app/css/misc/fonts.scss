@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family: 'Malina';
+    src: url('/assets/fonts/ALSMalina.ttf') format('.TrueType'),
+    	 url('/assets/fonts/ALSMalina.woff') format('WOFF'),
+    	 url('/assets/fonts/ALSMalina.eot') format('EOT'),
+         url('/assets/fonts/ALSMalina.svg') format('SVG');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin Malina() {
+    font-family: 'Malina'; 
+}
