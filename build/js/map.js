@@ -1,0 +1,1 @@
+function init(){var e=new ymaps.Map("map",{center:[55.76,37.64],zoom:7,controls:{}}),a=new ymaps.Placemark([55.76,37.64],{hintContent:"Москва!",balloonContent:"Столица России"},{iconLayout:"default#image",iconImageHref:"assets/img/marker.png",iconImageSize:[42,59],iconImageOffset:[-3,-42]});e.behaviors.disable(["scrollZoom"]),e.geoObjects.add(a)}ymaps.ready(init);
